@@ -1,0 +1,202 @@
+body {
+    font-family: "Albert Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+}
+
+.application-container {
+    width: 80%;
+    margin: 40px auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dear-google {
+    padding-right: 260px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+/* About Me Section */
+.about-me {
+    padding-right: 260px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* About Me Section */
+.portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* About List Styling */
+.about-list {
+    list-style: none; /* Remove default numbering */
+    counter-reset: about-counter; /* Custom counter for numbers */
+    padding-left: 0;
+}
+
+/* Each List Item */
+.about-list li {
+    counter-increment: about-counter; /* Increment counter */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 70px; /* Consistent spacing between number and text */
+}
+
+/* Large Number Styling */
+.about-list li::before {
+    content: counter(about-counter) "";
+    font-size: 48px; /* Large number */
+    font-weight: 600;
+    color: black;
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 50px; /* Fixed width ensures numbers align */
+    text-align: right; /* Aligns numbers properly */
+}
+
+.list-item {
+    flex-grow: 1;
+    flex-direction: column;
+    margin-bottom: 20px; /* Adds space between text and carousel */
+}
+
+/* Indented Text */
+.about-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    flex-grow: 1; /* Allows text to fill remaining space */
+}
+
+hr.solid {
+  border-top: 3px solid black;
+}
+
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Individual Project Styling */
+.project {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.project img {
+    width: 100%;
+}
+
+/* Project Sections */
+.project-section {
+    width: 100%;
+}
+
+/* General Text Styling */
+.hover-text {
+    color: blue;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Change color on hover */
+.hover-text:hover {
+    color: orange;
+}
+
+/* Hidden image by default */
+.hover-image {
+    position: absolute;
+    display: none;
+    max-height: 300px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none; /* Prevents interfering with mouse */
+}
+
+/* Scrollable Carousel */
+.scrollable-carousel {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100vw;
+    height: 300px;
+    scrollbar-width: thin; /* Custom scrollbar styling */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* Hide default scrollbar on WebKit browsers */
+.scrollable-carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scrollable-carousel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+/* Images inside the carousel */
+.scrollable-carousel img {
+    height: 100%;
+    width: auto;
+    max-width: 500px;
+    object-fit: contain;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    cursor: grab;
+}
+
+/* Project Container */
+.projects-container {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Individual Project Styling */
+.project {
+    width: 100%;
+}
+
+.project img {
+    width: 100%;
+}
+
+/* Project Sections */
+.project-section {
+    width: 100%;
+}
