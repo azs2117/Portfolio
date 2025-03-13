@@ -24,7 +24,7 @@ body {
 
 /* About Me Section */
 .about-me {
-    padding-right: 260px;
+    padding-left: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -60,6 +60,7 @@ body {
     flex-shrink: 0; /* Prevents shrinking */
     width: 50px; /* Fixed width ensures numbers align */
     text-align: right; /* Aligns numbers properly */
+    line-height: 1;
 }
 
 .list-item {
@@ -199,4 +200,51 @@ p {
 /* Project Sections */
 .project-section {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .application-container {
+        width: 95%;
+    }
+
+    .projects-container {
+        width: 95%;
+    }
+
+    .dear-google, .about-me, .portfolio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about-list li {
+        gap: 15px;
+    }
+
+    .scrollable-carousel {
+        height: 200px;
+    }
+
+    .scrollable-carousel img {
+        max-width: 350px;
+    }
+
+    .about-list li {
+        gap: 50px; /* Consistent spacing between number and text */
+}
 }
