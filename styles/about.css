@@ -1,0 +1,32 @@
+.about-me {
+    text-align: left;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.list-item {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.hover-text {
+    color: #23ADCC;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.hover-text:hover {
+    color: blue;
+}
+
+.hover-image {
+    position: absolute;
+    display: none;
+    max-height: 300px;
+    width: auto;
+    border-radius: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
