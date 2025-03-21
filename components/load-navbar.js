@@ -1,14 +1,21 @@
-fetch("components/navbar.html")
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("components/navbar.html")
     .then(response => response.text())
     .then(data => {
-        document.getElementById("navbar-container").innerHTML = data;
-        window.scrollTo(0, 0); // Ensure page is scrolled to top after navbar loads
+      const navbar = document.getElementById("navbar-container");
+      if (navbar) {
+        navbar.innerHTML = data;
+        window.scrollTo(0, 0);
+      } else {
+        console.error("navbar-container not found in the DOM.");
+      }
     })
     .catch(error => console.error("Error loading the navbar:", error));
 
-window.addEventListener("load", () => {
+  // Scroll to top again on window load, just to be safe
+  window.addEventListener("load", () => {
     setTimeout(() => {
-        window.scrollTo(0, 0);
-    }, 10); // Small delay ensures it runs after rendering
+      window.scrollTo(0, 0);
+    }, 10);
+  });
 });
-
