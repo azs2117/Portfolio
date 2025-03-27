@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+    background-color: #F8F2F2;
+  color: #33351C;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-break {
+    display: inline;
+  }
+
+  .mobile-break::after {
+    content: "\A"; /* newline character */
+    white-space: pre;
+  }
+}

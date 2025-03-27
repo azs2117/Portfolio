@@ -17,79 +17,72 @@
 <body>
     <div id="navbar-container"></div>
 
-    <!-- Project Details -->
-    <section class="projects-container">
-        <h1>Medusa</h1>
+    <div class="main-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <h1 class="page-title">Medusa</h1>
 
-        <!-- Hero Image -->
-        <div class="project">
-            <video width="100%" height="auto" autoplay loop muted playsinline>
-              <source src="assets/Apps/medusa-demo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-        </div>
+            <div class="project-section">
+                <p>I am currently designing Medusa, a social media app that blends casual sharing with AI-powered discovery to inspire curiosity about the world around us. Combining the spontaneity of BeReal with the visual inspiration of Pinterest, Medusa encourages users to post about their everyday environments—whether it’s a street mural, an architectural landmark, or a unique object. Using Google Image Search and Gemini’s visual ML capabilities, Medusa identifies elements in each post, providing educational insights and "discover similar" recommendations to turn everyday encounters into moments of discovery.</p>
+            </div>
 
-        <!-- Project Details Section -->
-        <div class="project-details">
-            <div class="row">
-                <div class="col detail">
-                    <h3>Role</h3>
-                    <p>Product Designer & Lead Engineer</p>
-                </div>
-                <div class="col detail">
-                    <h3>Timeline</h3>
-                    <p>6 weeks <br> Feb - Mar 2025 <br> (in progress)</p>
-                </div>
-                <div class="col detail">
-                    <h3>Skills</h3>
-                    <p><br>
-                    Prototyping <br>
-                    Visual Design <br>
-                    Interaction Design <br>
-                    Product Thinking</p>
-                </div>
-                <div class="col detail">
-                    <h3>Tools</h3>
-                    <p><br>
-                    Figma <br>
-                    Google Cloud Vision <br>
-                    Swift <br></p>
+            <div class="project-section">
+                <div class="project-details">
+                    <div class="row">
+                        <div class="col detail">
+                            <h4>Role</h4>
+                            <p>Product Designer & Lead Engineer</p>
+                        </div>
+                        <div class="col detail">
+                            <h4>Timeline</h4>
+                            <p>6 weeks <br> Feb - Mar 2025 <br> (in progress)</p>
+                        </div>
+                        <div class="col detail">
+                            <h4>Skills + Tools</h4>
+                            <p>Figma, Prototyping, Google Cloud Vision, Swift</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Product Overview -->
-        <div class="project-section">
-            <h2>Product Overview</h2>
-            <p>I am currently designing Medusa, a social media app that blends casual sharing with AI-powered discovery to inspire curiosity about the world around us. Combining the spontaneity of BeReal with the visual inspiration of Pinterest, Medusa encourages users to post about their everyday environments—whether it’s a street mural, an architectural landmark, or a unique object. Using Google Image Search and Gemini’s visual ML capabilities, Medusa identifies elements in each post, providing educational insights and "discover similar" recommendations to turn everyday encounters into moments of discovery.</p>
-        </div>
+        <!-- Right Column -->
+        <div class="right-column">
+            <section class="projects-container">
+                <div class="project">
+                    <video width="100%" height="auto" autoplay loop muted playsinline>
+                        <source src="assets/Apps/medusa-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-        <!-- The Approach -->
-        <div class="project-section">
-            <h2>The Approach</h2>
-            <p> I am currently designing Medusa’s interface in Figma, focusing on an intuitive posting flow that minimizes friction. When users upload a photo, Google Image Search and Gemini process the image to recognize artworks, historical landmarks, or cultural elements. The app then enhances the post with relevant educational details and visually similar discoveries, allowing users to explore related content. The feed is designed to be interactive, enabling engagement through reactions, comments, and shared discoveries.</p>
-        </div>
+                <div class="project-section">
+                    <h2>The Approach</h2>
+                    <p>I am currently designing Medusa’s interface in Figma, focusing on an intuitive posting flow that minimizes friction. When users upload a photo, Google Image Search and Gemini process the image to recognize artworks, historical landmarks, or cultural elements. The app then enhances the post with relevant educational details and visually similar discoveries, allowing users to explore related content. The feed is designed to be interactive, enabling engagement through reactions, comments, and shared discoveries.</p>
+                </div>
 
-        <!-- Key Assets - Horizontal Scrolling Gallery -->
-        <div class="project-section">
-            <h2>Key Assets</h2>
-            <div class="asset-gallery">
-                <img src="assets/Apps/medusa_mobile.png" alt="Wireframe 1">
-            </div>
-        </div>
+                <div class="project-section">
+                    <h2>Key Assets</h2>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="card custom-card">
+                                <img src="assets/Apps/medusa_mobile.png" alt="Medusa Mobile UI">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Current Progress & Next Steps -->
-        <div class="project-section">
-            <h2>Current Progress & Next Steps</h2>
-            <p>I am developing detailed wireframes and high-fidelity UI assets. The design process is focused on refining the posting experience, ensuring that AI-powered insights feel natural and engaging. As I move forward, I will continue iterating on interaction flows and prepare for the next phase of prototyping and development. Medusa is shaping into a platform that redefines social posting by encouraging curiosity, learning, and exploration in everyday life.</p>
+                <div class="project-section">
+                    <h2>Current Progress & Next Steps</h2>
+                    <p>I am developing detailed wireframes and high-fidelity UI assets. The design process is focused on refining the posting experience, ensuring that AI-powered insights feel natural and engaging. As I move forward, I will continue iterating on interaction flows and prepare for the next phase of prototyping and development. Medusa is shaping into a platform that redefines social posting by encouraging curiosity, learning, and exploration in everyday life.</p>
+                </div>
+            </section>
         </div>
-
-    </section>
+    </div>
 
     <!-- Bootstrap JavaScript & Navbar Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="components/gallery-scroll.js"></script>
     <script src="components/load-navbar.js"></script>
-
 </body>
 </html>

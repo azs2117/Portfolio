@@ -1,12 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto;
+  }
+}
+
+.main-container {
+    padding-top: var(--navbar-height);
+  display: flex;
+  /*height: calc(100vh - var(--navbar-height));*/
+  overflow: hidden; /* remove for mobile */
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.left-column {
+  width: 35%;
+    padding: 1.5rem;
+    background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Change from center to flex-start */
+  text-align: left;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+.right-column {
+    background-color: white;
+  flex: 1;
+  overflow-y: scroll;
+    height: 100vh;
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack vertically */
+    height: auto;           /* Remove full height constraint */
+    overflow: visible;      /* Allow full scroll */
+  }
+
+  .left-column {
+    width: 100%;
+    height: auto;
+      /*min-height: 100vh;*/
+    padding: 2rem 1rem;
+    align-items: flex-start;
+  }
+
+  .right-column {
+    flex: none;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 2rem 1rem;
+  }
+}
+
+
 .projects-container {
-    width: 70%;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: left;
-    align-items: center;
-    gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .project {
@@ -20,79 +92,24 @@
 
 .project-section {
     width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.right-column .project-section {
+  margin-bottom: 3rem;
 }
 
 .project-details {
     margin-bottom: 20px;
 }
 
-.project-details .row {
+.project-details .row>* {
     margin: 0;
-    padding: 0;
-    gap: 80px;
 }
 
 .detail {
-    font-weight: 500;
+    width: auto;
     text-align: left;
     color: #33351C;
     padding-bottom: 10px;
-}
-
-/* Asset Gallery - Enable Independent Horizontal Scrolling */
-.asset-gallery {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 100vw;
-    height: 300px;
-    white-space: nowrap;
-    scrollbar-width: none;
-    position: relative;
-}
-
-/* Ensure images fill the asset-gallery container */
-.asset-gallery img {
-    height: 100%;
-    width: auto;
-    max-width: none;
-    object-fit: contain;
-    scroll-snap-align: start;
-}
-
-/* Enable smooth scrolling */
-.asset-gallery::-webkit-scrollbar {
-    height: 6px;
-}
-
-.asset-gallery::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-/* Back Link */
-.back-link {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: blue;
-}
-
-.back-link:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .projects-container {
-        width: 95%;
-    }
-
-    .asset-gallery {
-        height: 250px;
-    }
 }

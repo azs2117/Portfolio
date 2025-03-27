@@ -1,8 +1,21 @@
+body {
+    background-color: #F8F2F2;
+    color: #33351C;
+}
+
 .about-me {
     text-align: left;
-    padding-right: 150px;
+    padding-right: 20rem;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding-right: 1rem;
+      padding-left: 1rem;
+
+  }
 }
 
 .list-item {

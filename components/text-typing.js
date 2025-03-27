@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("animated-text");
-    const titles = ["Product Manager", "UX Designer", "Researcher", "Web Designer"];
+    const titles = ["Product Manager", "UI Designer", "UX Researcher", "Innovator"];
     let titleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
