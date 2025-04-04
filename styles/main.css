@@ -112,7 +112,7 @@ p {
 .navbar-logo {
   display: block;
   text-align: center;
-  margin: 0rem 1.5rem 5rem 1.5rem !important;
+  margin: 0 1.5rem 5rem 1.5rem !important;
     border-bottom: none !important;
 }
 
@@ -298,5 +298,46 @@ p {
 .image-hover:hover img {
     filter: brightness(70%);
 }
+
+/* Large-format carousel for desktop assets */
+/*.carousel-desktop {*/
+/*    overflow-x: auto;*/
+/*    padding: 1rem 0;*/
+/*}*/
+
+.carousel-desktop .carousel {
+    padding: 0 20px;
+}
+
+/* Large-format cards inside the desktop carousel */
+.card.custom-card.large-format-card {
+    flex: 0 0 calc(50% - 20px) !important;
+    /*max-width: 65vw !important;*/
+    height: auto;
+    /*padding-right: 1.5rem;*/
+}
+
+.card.custom-card.large-format-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /*box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);*/
+}
+
+@media (max-width: 1024px) {
+  .card.custom-card.large-format-card {
+    flex: 0 0 calc(70% - 20px) !important;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card.custom-card.large-format-card {
+    flex: 0 0 80% !important;
+    max-width: 80%;
+  }
+}
+
+
 
 
