@@ -8,17 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo(0, 0);
 
         // ✅ DOM elements are now loaded — set up toggle logic
-        const toggleBtn = document.getElementById("toggle-overlay");
-        const overlay = document.getElementById("overlay-nav");
+        const toggleBtn = document.getElementById("toggle-menu");
+        const dropdownMenu = document.getElementById("dropdown-menu");
 
-        if (toggleBtn && overlay) {
+        if (toggleBtn && dropdownMenu) {
           toggleBtn.addEventListener("click", () => {
-            const isActive = overlay.classList.contains("active");
-            overlay.classList.toggle("active");
-            toggleBtn.textContent = isActive ? "Explore" : "Close";
+            dropdownMenu.classList.toggle("active");
+            toggleBtn.textContent = dropdownMenu.classList.contains("active") ? "Portfolio" : "Portfolio";
           });
-        } else {
-          console.error("Toggle button or overlay not found");
         }
 
       } else {

@@ -61,29 +61,60 @@ p {
 
 /* Navigation Bar */
 
-.nav-container {
-    width: 100%;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    margin-right: auto;
-    margin-left: auto;
+.navbar {
+  position: relative;
+  z-index: 4000; /* optional if you want nav to layer above page content */
+  width: 100%;
+  background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
 }
 
-.navbar {
-    font-weight: 400;
-    font-size: 16px;
-    background-color: #FFFFFA;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3000;
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: space-between;
+.nav-container {
+  width: 100%;
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand on the left */
+.navbar-brand {
+  font-size: 16px;
+  font-weight: 500;
+  color: #33351C;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Right nav links group */
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Nav links and button styling */
+.nav-right .nav-link,
+.nav-right .menu-btn {
+  font-size: 14px;
+  font-weight: 300;
+  color: #3B3C2D;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0.25rem 0;
+}
+
+.nav-right .nav-link:hover,
+.nav-right .menu-btn:hover {
+  color: blue;
 }
 
 @media (max-width: 992px) {
+
 
     .custom-navbar .navbar-nav {
         flex-direction: column;
@@ -100,244 +131,19 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 :root {
   --navbar-height: 56px;
 }
-
-.navbar-brand {
-    font-size: 16px;
-    padding: 0;
-}
-
-.navbar-logo {
-  display: block;
-  text-align: center;
-  margin: 0 1.5rem 5rem 1.5rem !important;
-    border-bottom: none !important;
-}
-
-.navbar-logo img {
-  width: 500px; /* adjust to desired size */
-  height: auto;
-  max-width: 80%;
-  display: inline-block;
-}
-
-.navbar-nav .nav-link {
-    font-size: 14px;
-    font-weight: 300;
-    color: #3B3C2D;
-    transition: color 0.3s;
-    padding: 0.1rem 0;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: blue;
-}
-
-
-/* Expanded Menu Styling */
-
-.menu-btn {
-    padding: 0;
-}
-
-.menu-toggle {
-  font-size: 16px;
-  font-weight: 400;
-  color: blue;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 3000;
-}
-
-.menu-toggle.active {
-  border-radius: 0 !important;
-}
-
-
-.overlay-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* full screen always */
-  background-color: white;
-  overflow-y: auto;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-
-  /* Transition states */
-  opacity: 0;
-  /*transform: translateY(-20px);*/
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.overlay-nav.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.overlay-content {
-  padding-top: 4rem;
-  width: 100%;
-  text-align: left;
-}
-
-.overlay-content > a {
-  display: block;
-  font-size: 16px;
-  color: #3B3C2D;
-  text-decoration: none;
-  margin: 1.5rem;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-}
-
-.carousel-container {
-    /*background-color: white;*/
-    width: auto;
-    height: auto;
-    overflow-x: auto; /* allow horizontal scroll */
-    overflow-y: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 1rem 0;
-    z-index: 0;
-}
-
-.carousel {
-    display: flex;
-    /*gap: 30px;*/
-    padding: 0 20px;
-    flex-wrap: nowrap;
-    /*overflow-x: auto;*/
-    overflow: visible;
-}
-
-.card.custom-card {
-    flex: 0 0 calc(30% - 20px); /* Show 2.5 cards */
-    width: auto;
-    height: 100%;
-    scroll-snap-align: start;
-    transition: transform 0.3s ease-in-out;
-    background: transparent;
-    border-radius: 0;
-    border-width: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* required for z-index to work */
-    padding-right: 1.5rem;
-}
-
-.card-body {
-    flex-grow: 1;
-    padding: 1rem 0;
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.card-body p {
-    font-size: 14px;
-    line-height: 1.4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-@media (max-width: 1024px) {
-    .card.custom-card {
-        flex: 0 0 calc(50% - 20px);
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 768px) {
-    .card.custom-card {
-        flex: 0 0 80%;
-        max-width: 80%;
-    }
-}
-
-.card.custom-card:hover {
-  transform: scale(1.05);
-  z-index: 9999;
-  position: relative;
-}
-
-.image-hover {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.image-hover img {
-    transition: filter 0.3s ease-in-out;
-}
-
-.image-hover:hover img {
-    filter: brightness(70%);
-}
-
-/* Large-format carousel for desktop assets */
-/*.carousel-desktop {*/
-/*    overflow-x: auto;*/
-/*    padding: 1rem 0;*/
-/*}*/
-
-.carousel-desktop .carousel {
-    padding: 0 20px;
-}
-
-/* Large-format cards inside the desktop carousel */
-.card.custom-card.large-format-card {
-    flex: 0 0 calc(50% - 20px) !important;
-    /*max-width: 65vw !important;*/
-    height: auto;
-    /*padding-right: 1.5rem;*/
-}
-
-.card.custom-card.large-format-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    /*box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);*/
-}
-
-@media (max-width: 1024px) {
-  .card.custom-card.large-format-card {
-    flex: 0 0 calc(70% - 20px) !important;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .card.custom-card.large-format-card {
-    flex: 0 0 80% !important;
-    max-width: 80%;
-  }
-}
-
-
-
-

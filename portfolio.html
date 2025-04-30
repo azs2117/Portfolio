@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Google Fonts & Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body>
+
+  <!-- Navbar (reused from index) -->
+  <div id="navbar-container"></div>
+
+  <!-- Portfolio content -->
+  <div class="portfolio-grid">
+    <!-- Portfolio Cards (same as your current dropdown content) -->
+    <div class="card custom-card">
+        <a href="SMI.html" class="image-hover">
+          <img src="assets/Bonafide/SMI_preview.png" class="card-img-top" alt="Subscription Management Interface Redesign">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Subscription Management Interface</h4>
+          <p>Improved the way customers track, modify, and manage their subscriptions by shifting from a single-page list to a structured multi-page experience.</p>
+        </div>
+      </div>
+
+      <div class="card custom-card">
+        <a href="StudyLink.html" class="image-hover">
+          <img src="assets/Apps/StudyLink_preview.png" class="card-img-top" alt="StudyLink Application">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">StudyLink</h4>
+          <p>A cloud-based application designed to help university students easily connect with study partners from their enrolled courses.</p>
+        </div>
+      </div>
+
+      <div class="card custom-card">
+        <a href="BYOB.html" class="image-hover">
+          <img src="assets/Bonafide/BYOB_preview.png" class="card-img-top" alt="Build Your Own Bundle Experience">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Build Your Own Bundle Experience</h4>
+          <p>Giving customers complete control over their subscriptions, allowing them to curate personalized product selections instead of relying on pre-set bundles.</p>
+        </div>
+      </div>
+
+<!--      <div class="card custom-card">-->
+<!--        <img src="assets/Creative/IMG_5055.JPG" class="card-img-top" alt="Film Photograph">-->
+<!--      </div>-->
+
+      <div class="card custom-card">
+        <a href="Medusa.html" class="image-hover">
+          <img src="assets/Apps/Medusa_preview.png" class="card-img-top" alt="Medusa App">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Medusa</h4>
+          <p>WIP: A visual ML and Gemini-powered app that educates users on art & culture directly in their surroundings.</p>
+        </div>
+      </div>
+
+  </div>
+
+    <!-- Bootstrap JavaScript & Navbar Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="components/gallery-scroll.js"></script>
+    <script src="components/load-navbar.js"></script>
+
+</body>
+</html>

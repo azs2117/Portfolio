@@ -1,114 +1,17 @@
 <!-- Sticky Top Navbar -->
-<nav class="navbar navbar-light bg-transparent sticky-top">
+<nav class="navbar navbar-light bg-transparent">
   <div class="nav-container d-flex justify-content-between align-items-center">
-    <a class="navbar-brand" href="index.html">Amelie Scheil</a>
-      <button id="toggle-overlay" class="btn menu-btn menu-toggle">Explore</button>
+    <a href="index.html" class="navbar-brand">Amelie Scheil</a>
+
+    <div class="nav-right d-flex align-items-center">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="assets/AScheilResume2025.pdf" target="_blank" class="nav-link">Resume</a>
+    </div>
   </div>
 </nav>
 
-<!-- Fullscreen Overlay Nav -->
-<div id="overlay-nav" class="overlay-nav">
-  <div class="overlay-content">
-<!--    <a href="About.html" class="navbar-logo">-->
-<!--      <img src="assets/Brand/Amelie-Scheil.png" alt="Amelie Scheil">-->
-<!--    </a>-->
-        <a href="about.html">About Me</a>
-        <a href="assets/AScheilResume2025.pdf" target="_blank">Resume</a>
-
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="card custom-card">
-                    <a href="SMI.html" class="image-hover">
-                        <img src="assets/Bonafide/SMI_preview.png" class="card-img-top" alt="Subscription Management Interface Redesign">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Subscription Management Interface</h4>
-                        <p>Improved the way customers track, modify, and manage their subscriptions by shifting from a single-page list to a structured multi-page experience.</p>
-                    </div>
-                </div>
-
-                <div class="card custom-card">
-                    <a href="StudyLink.html" class="image-hover">
-                        <img src="assets/Apps/StudyLink_preview.png" class="card-img-top" alt="StudyLink Application">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">StudyLink</h4>
-                        <p>A cloud-based application designed to help university students easily connect with study partners from their enrolled courses.</p>
-                    </div>
-                </div>
-
-                <div class="card custom-card">
-                    <a href="BYOB.html" class="image-hover">
-                        <img src="assets/Bonafide/BYOB_preview.png" class="card-img-top" alt="Build Your Own Bundle Experience">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Build Your Own Bundle Experience</h4>
-                        <p>Giving customers complete control over their subscriptions, allowing them to curate personalized product selections instead of relying on pre-set bundles.</p>
-                    </div>
-                </div>
-
-                <div class="card custom-card">
-                    <a href="Medusa.html" class="image-hover">
-                        <img src="assets/Apps/Medusa_preview.png" class="card-img-top" alt="Medusa App">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Medusa</h4>
-                        <p>WIP: A visual ML and Gemini-powered app that educates users on art & culture directly in their surroundings.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="card custom-card">
-                    <img src="assets/Creative/IMG_2151.JPG" class="card-img-top" alt="Film Photograph">
-                </div>
-
-                <div class="card custom-card">
-                    <img src="assets/Creative/IMG_5066.JPG" class="card-img-top" alt="Film Photograph">
-                </div>
-
-                <div class="card custom-card">
-                    <img src="assets/Creative/IMG_5055.JPG" class="card-img-top" alt="Film Photograph">
-                </div>
-
-                <div class="card custom-card">
-                    <img src="assets/Creative/IMG_5509.JPG" class="card-img-top" alt="Film Photograph">
-                </div>
-
-                <div class="card custom-card">
-                    <img src="assets/Creative/IMG_9867.JPG" class="card-img-top" alt="Film Photograph">
-                </div>
-
-            </div>
-        </div>
-  </div>
-</div>
-
 <script src="load-navbar.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const toggleBtn = document.getElementById("toggle-overlay");
-        const overlay = document.getElementById("overlay-nav");
-
-        if (toggleBtn && overlay) {
-          toggleBtn.addEventListener("click", () => {
-            const isActive = overlay.classList.contains("active");
-            overlay.classList.toggle("active");
-            toggleBtn.textContent = isActive ? "Explore" : "Close";
-
-            // ✅ Add or remove the no-radius class
-            if (isActive) {
-              toggleBtn.classList.remove("no-radius");
-            } else {
-              toggleBtn.classList.add("no-radius");
-            }
-          });
-        }
-});
-</script>
 
 
 

@@ -11,8 +11,8 @@ html, body {
 }
 
 .main-container {
-    padding-top: var(--navbar-height);
-  display: flex;
+    display: flex;
+    padding: 1rem 3rem;
   /*height: calc(100vh - var(--navbar-height));*/
   overflow: hidden; /* remove for mobile */
 }
@@ -26,8 +26,8 @@ html, body {
 
 .left-column {
   width: 35%;
-    padding: 1.5rem;
-    background-color: white;
+    padding: 1.5rem 0;
+    background-color: transparent;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ html, body {
   flex: 1;
   overflow-y: scroll;
     height: 100vh;
-  padding: 1.5rem 1.5rem 5rem 1.5rem;
+  padding: 1.5rem 0 5rem 3rem;
 }
 
 @media (max-width: 768px) {
@@ -112,4 +112,32 @@ html, body {
     text-align: left;
     color: #33351C;
     padding-bottom: 10px;
+}
+
+.asset-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.desktop-assets {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile-assets {
+  grid-template-columns: repeat(4, 1fr); /* 🔥 4 per row */
+  gap: 1rem;
+}
+
+.asset-grid img {
+  width: 100%;
+  height: auto;
+  /*border-radius: 6px;*/
+  /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);*/
+  transition: transform 0.3s ease;
+}
+
+.asset-grid img:hover {
+  transform: scale(1.02);
+  z-index: 1;
 }
