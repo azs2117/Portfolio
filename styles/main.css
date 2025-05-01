@@ -97,7 +97,7 @@ p {
 /* Right nav links group */
 .nav-right {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -105,7 +105,7 @@ p {
 .nav-right .nav-link,
 .nav-right .menu-btn {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #3B3C2D;
   text-decoration: none;
   background: none;

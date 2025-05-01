@@ -6,7 +6,7 @@ body {
 
 .portfolio-grid {
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   background-color: white;
   z-index: 1000;
   display: flex;
