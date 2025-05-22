@@ -1,0 +1,63 @@
+body {
+  margin: 0.2rem;
+}
+
+.thesis-container {
+  max-width: 720px;
+  margin: 1rem auto;
+  /*line-height: 1.7;*/
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+/* Paragraphs */
+.thesis-container p {
+  text-indent: 2em;
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+.thesis-container h1,
+.thesis-container h2,
+.thesis-container h3 {
+  text-align: center;
+  font-weight: 500;
+  margin: 3rem 0 1rem;
+  line-height: 1.5;
+}
+
+.thesis-container h1{
+  margin: 1rem 0 1rem !important;
+}
+
+/* Figures */
+.thesis-container figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.thesis-container figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.thesis-container figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Footnotes */
+.thesis-container sup a {
+  text-decoration: none;
+}
+
+.thesis-container .footnotes {
+  margin-top: 4rem;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+}

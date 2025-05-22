@@ -1,34 +1,32 @@
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   overflow-y: auto;
-  min-height: 100vh;
 }
 
 .portfolio-grid {
-  width: 100%;
-  padding: 2rem 3rem;
-  background-color: white;
-  z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+  padding: 2rem 3rem;
 }
 
 .portfolio-grid .card.custom-card {
-  flex: 0 0 calc(50% - 15px);
-  max-width: calc(50% - 15px);
+  flex: 0 0 100%;
+  max-width: 60%;
 }
 
 .card.custom-card {
-  background: transparent;
-  border: none;
-  overflow: hidden;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  display: flex;
+  border-radius: 0;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -45,14 +43,14 @@ body {
 }
 
 .card-body {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
 .card-body h4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -66,13 +64,12 @@ body {
 
 @media (max-width: 768px) {
   .portfolio-grid {
-    flex-direction: column; /* stack cards vertically */
+    flex-direction: column;
     flex-wrap: nowrap;
     padding: 1rem 1.5rem 2rem;
-    height: calc(100vh - var(--navbar-height));
     overflow-y: auto;
     overflow-x: hidden;
-    display: flex; /* only show if active */
+    display: flex;
   }
 
   .portfolio-grid .card.custom-card {
