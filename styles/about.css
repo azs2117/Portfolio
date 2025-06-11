@@ -6,8 +6,8 @@ body {
 .about-me {
     text-align: left;
     padding-right: 20rem;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -20,7 +20,15 @@ body {
 
 .list-item {
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 3rem;
+}
+
+.list-item h1 {
+    font-weight: 400;
+}
+
+.list-item h2 {
+    font-weight: 300;
 }
 
 .hover-text {

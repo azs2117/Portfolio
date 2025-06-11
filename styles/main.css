@@ -9,53 +9,43 @@ body {
 /* Font Styling */
 
 h1 {
-    font-size: 40px;
     font-weight: 400;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.6;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-size: 18px;
 }
 
 h4 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 16px;
 }
 
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-  }
+  /*h1 {*/
+  /*  font-size: 32px;*/
+  /*}*/
 
-  h2 {
-    font-size: 24px;
-  }
+  /*h2 {*/
+  /*  font-size: 24px;*/
+  /*}*/
 
-  h3 {
-    font-size: 18px;
-  }
+  /*h3 {*/
+  /*  font-size: 18px;*/
+  /*}*/
 
-  p {
-    font-size: 16px;
-  }
+  /*p {*/
+  /*  font-size: 16px;*/
+  /*}*/
 }
 
 /* Navigation Bar */

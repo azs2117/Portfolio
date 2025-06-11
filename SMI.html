@@ -23,8 +23,8 @@
             <h1 class="page-title">Subscription Management Interface Redesign</h1>
 
             <div class="project-section">
-                Checkout the live experience <a href="https://hellobonafide.com/account/login"> here</a>.<br><br>
-                The Subscription Management Interface (SMI) Redesign improved the way customers track, modify, and manage their subscriptions by shifting from a single-page list to a structured multi-page experience. The new design introduced a Subscription Management Page for an organized view of all subscriptions and a Subscription Detail Page with clear order status updates and enhanced modification options. By addressing long-standing usability frustrations, this redesign provided customers with greater control and clarity over their recurring orders.
+                <h3 style="color:#626260">Checkout the live experience <a href="https://hellobonafide.com/account/login"> here</a>.</h3><br>
+                <p>The Subscription Management Interface (SMI) Redesign improved the way customers track, modify, and manage their subscriptions by shifting from a single-page list to a structured multi-page experience. The new design introduced a Subscription Management Page for an organized view of all subscriptions and a Subscription Detail Page with clear order status updates and enhanced modification options. By addressing long-standing usability frustrations, this redesign provided customers with greater control and clarity over their recurring orders.
             </div>
 
             <div class="project-section">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col detail">
                             <h4>Skills + Tools</h4>
-                            <p>Prototyping, Competitive Research, Interaction Design, Figma, A/B Testing</p>
+                            <p>Figma, Prototyping, Competitive Research</p>
                         </div>
                     </div>
                 </div>
@@ -50,26 +50,54 @@
         <!-- Right Column -->
         <div class="right-column">
             <section class="projects-container">
-                <div class="project">
+
+                <div class="image-section">
                     <img src="assets/Bonafide/SMI_preview.png" alt="Subscription Management Interface Redesign">
                 </div>
 
-                <div class="project-section">
+                <div class="project-section" style="margin-bottom: 2rem !important">
                     <h2>The Challenge</h2>
-                    <p>The previous interface displayed all subscriptions in a single-page list, making it difficult for users to track shipments, modify orders, or understand their subscription status. Customers frequently contacted support due to unclear cancellation flows and limited product modification options. The redesign needed to improve organization and navigation while ensuring that users could easily update, track, and adjust their subscriptions with minimal confusion.</p>
+                    <p>Bonafide Health, a women’s health company offering non-hormonal menopause supplements, needed a more intuitive way for customers to manage recurring subscriptions. The original Subscription Management Interface (SMI) was a single-page list where all orders—past, current, and future—were displayed together. This made it difficult for customers to track upcoming shipments or modify their subscriptions with confidence. Our challenge was clear:</p>
+                </div>
+
+                <div class="project-highlight">
+                    <h3>How might we simplify subscription management to reduce support inquiries and improve customer confidence?</h3>
+                </div>
+
+                <div class="scrollable-image-container">
+                    <img src="assets/Bonafide/SMI/old_SMI.png" alt="Old SMI">
                 </div>
 
                 <div class="project-section">
-                    <h2>The Approach</h2>
-                    <p>To create a more intuitive experience, I conducted competitive research on industry best practices and worked closely with developers to translate complex subscription logic into a multi-page system. The redesign introduced a structured Subscription Management Page with clear shipment details and a Subscription Detail Page with new modification features, such as swapping products and one-time removals. By designing flexible user flows for different order statuses—Upcoming, Processing, and In-Transit—we ensured that customers had the right options available at the right time.</p>
+                    <h2>Research & Insights</h2>
+                    <p>Customer experience (CX) feedback revealed two major pain points: confusion between canceling a single product and canceling the entire subscription, and lack of clarity around the status of active orders. Support tickets frequently stemmed from misunderstandings around shipment timelines or modification options. To better understand best practices, I conducted a competitive analysis and found that most modern interfaces used a multi-page system with a visual overview and separate detail views for each subscription.</p>
+                </div>
+
+                <div class="image-section">
+                    <img src="assets/Bonafide/SMI/SMI_research.png" alt="Subscription Management Interface Redesign">
                 </div>
 
                 <div class="project-section">
-                  <div class="asset-grid desktop-assets">
-                    <img src="assets/Bonafide/SMI/SMI-13.png" alt="Desktop UI">
-                    <img src="assets/Bonafide/SMI/SMI-14.png" alt="Desktop UI">
-                    <img src="assets/Bonafide/SMI/SMI-15.png" alt="Desktop UI">
-                    <img src="assets/Bonafide/SMI/SMI-16.png" alt="Desktop UI">
+                    <h2>Design Strategy</h2>
+                    <p>Guided by this insight, I designed a new multi-page interface composed of a Subscription Overview Page (SOP) and dedicated Subscription Detail Pages (SDPs). The SOP displayed each subscription as an easy-to-read tile with key information like next shipment date, product list, frequency, and total cost. Each tile served as an entry point to its corresponding detail page. On the SDP, I organized functionality into three main sections: subscription tracking, order modification, and product details. To reduce user drop-off, I introduced in-context product previews, a "Cancel One Time" button to clarify temporary removals, and direct actions like “Swap” and “Add Product” to streamline common tasks.</p>
+                </div>
+
+                <div class="project-section">
+                  <div id="desktopCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/Bonafide/SMI/SMI-13.png" class="d-block w-100" alt="Desktop UI">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/Bonafide/SMI/SMI-14.png" class="d-block w-100" alt="Desktop UI">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/Bonafide/SMI/SMI-15.png" class="d-block w-100" alt="Desktop UI">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/Bonafide/SMI/SMI-16.png" class="d-block w-100" alt="Desktop UI">
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -82,52 +110,9 @@
                   </div>
                 </div>
 
-
-<!--                    <div class="carousel-container">-->
-<!--                        <div class="carousel">-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-1.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-2.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-3.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-4.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-5.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-6.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-7.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-8.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-9.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-10.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-11.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                            <div class="card custom-card">-->
-<!--                                <img src="assets/Bonafide/SMI/SMI-12.png" alt="SMI Mobile UI">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
                 <div class="project-section">
-                    <h2>Results & Impact</h2>
-                    <p>The redesigned interface significantly reduced customer support inquiries related to subscription management, as users could now clearly track and modify their orders. Enhanced organization and navigation led to increased customer confidence in managing their subscriptions, improving overall retention and satisfaction. Through this project, I learned the importance of early collaboration with developers to ensure feasibility and how structured design decisions can directly reduce friction in user interactions.</p>
+                    <h2>Outcome & Impact</h2>
+                    <p>The redesign resulted in a significant drop in customer support inquiries related to subscription issues. Usability improved across both desktop and mobile views, and internal user testing showed higher success rates for key tasks like editing orders or canceling individual items. This project reinforced the value of early collaboration with engineering to ensure feasibility and revealed how small UX changes—when grounded in real customer pain points—can meaningfully reduce friction and increase retention.</p>
                 </div>
             </section>
         </div>
@@ -137,5 +122,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="components/gallery-scroll.js"></script>
     <script src="components/load-navbar.js"></script>
+
+    <script>
+      const desktopCarousel = document.querySelector('#desktopCarousel');
+      new bootstrap.Carousel(desktopCarousel, {
+        interval: 3000, // 3 seconds between slides
+        ride: 'carousel',
+        pause: false,
+        wrap: true
+      });
+    </script>
 </body>
 </html>
