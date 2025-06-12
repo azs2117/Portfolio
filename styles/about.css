@@ -8,10 +8,10 @@ body {
 
 .container {
     height: 100vh;
-  padding: 0 1.5rem;
+  padding: 6rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
     flex-direction: column;
       /*transform: translate(0%, -5%);*/
 }
@@ -19,6 +19,10 @@ body {
 @media (max-width: 768px) {
     body {
         overflow: visible;
+    }
+
+    .container {
+        padding: 1rem 1.5rem 2rem;
     }
 
   .about-me {

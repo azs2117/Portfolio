@@ -17,8 +17,7 @@ html, body {
 }
 
 .introduction {
-  font-size: 32px !important;
-  max-width: 600px;
+  width: 60%;
   text-align: center;
 }
 
@@ -60,6 +59,14 @@ html, body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+  }
+
+  .introduction {
+    width: 100%;
+  }
+
+  .introduction h3 {
+    font-size: 18px;
   }
 }
 
