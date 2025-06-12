@@ -1,16 +1,26 @@
 body {
     background-color: white;
     color: #33351C;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 
-.about-me {
-    text-align: left;
-    padding-right: 20rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+.container {
+    height: 100vh;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+      /*transform: translate(0%, -5%);*/
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow: visible;
+    }
+
   .about-me {
     padding-right: 1rem;
       padding-left: 1rem;
@@ -25,10 +35,12 @@ body {
 
 .list-item h1 {
     font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .list-item h2 {
     font-weight: 300;
+    font-size: 20px;
 }
 
 .hover-text {

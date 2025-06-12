@@ -1,16 +1,33 @@
 <!-- Sticky Top Navbar -->
-<nav class="navbar navbar-light bg-transparent">
-  <div class="nav-container d-flex justify-content-between align-items-center">
-    <div class="nav-right d-flex align-items-center">
-      <a href="index.html" class="nav-link">Amelie Scheil</a>
-    </div>
-    <div class="nav-right d-flex align-items-center">
-      <a href="about.html" class="nav-link">About</a>
-      <a href="portfolio.html" class="nav-link">Portfolio</a>
-      <a href="assets/AScheilResume2025.pdf" target="_blank" class="nav-link">Resume</a>
+<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Amelie Scheil</a>
+
+    <!-- Toggler button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/AScheilResume2025.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+
 
 <script src="load-navbar.js"></script>
 

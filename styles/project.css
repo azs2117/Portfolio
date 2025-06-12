@@ -1,13 +1,13 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow-y: auto;
   background-color: #F6F5F1;
 }
 
 @media (max-width: 768px) {
   html, body {
-    overflow: auto;
+      overflow-y: auto;
   }
 }
 
@@ -63,6 +63,7 @@ html, body {
     flex-direction: column; /* Stack vertically */
     height: auto;           /* Remove full height constraint */
     overflow: visible;      /* Allow full scroll */
+      padding: 1.5rem;
   }
 
   .left-column {

@@ -62,3 +62,14 @@ html, body {
     flex-direction: column;
   }
 }
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: lightgrey;
+  z-index: 1001; /* higher than container content */
+  background-color: white; /* or semi-transparent for design */
+  text-align: center;
+  padding: 1rem;
+}
