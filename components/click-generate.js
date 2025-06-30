@@ -2,13 +2,20 @@
 document.addEventListener('DOMContentLoaded', function() {
   const imagePaths = [
     'assets/Keepsakes/yosemite-postcard.png',
+      'assets/Creative/IMG_1946.JPG',
     'assets/Keepsakes/sf-postcard.png',
-    'assets/Creative/IMG_5055.JPG',
+      'assets/Apps/ARound_mobile.png',
     'assets/Creative/IMG_2151.JPG',
     'assets/Keepsakes/spain-postcard.png',
-    'assets/Keepsakes/paris-postcard.png',
+      'assets/Creative/thesis_thumbnail.png',
+      'assets/Apps/legenda_mobile.png',
     'assets/Keepsakes/napoli-postcard.png',
+      'assets/Apps/legenda_tile.png',
     'assets/Creative/IMG_5066.JPG',
+      'assets/Apps/ARound_tile.png',
+      'assets/Creative/IMG_5066.JPG',
+      'assets/Bonafide/SMI_tile.png',
+      'assets/Keepsakes/paris-postcard.png',
     'assets/Creative/IMG_5509.JPG'
   ];
 
