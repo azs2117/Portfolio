@@ -15,6 +15,7 @@ html, body {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  transform: translateY(-10vh);
 }
 
 .title-section {
@@ -23,17 +24,17 @@ html, body {
   pointer-events: none;
 }
 
-.title-section h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
+.signature-image {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 16pt;
   color: #666;
-  font-weight: 300;
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -60,12 +61,12 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .title-section h1 {
-    font-size: 2rem;
+  .signature-image {
+    max-width: 250px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 14pt;
   }
 
   .click-image {
