@@ -43,12 +43,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add to document
     document.body.appendChild(img);
-    
-    // Remove images after 3 seconds instead of 5
-    setTimeout(() => {
-      if (img.parentNode) {
-        img.parentNode.removeChild(img);
-      }
-    }, 3000);
   });
 });
