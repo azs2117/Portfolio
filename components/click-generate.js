@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-  const images = [
+  const imagePaths = [
     'assets/Keepsakes/yosemite-postcard.png',
     'assets/Keepsakes/sf-postcard.png',
     'assets/Creative/IMG_5055.JPG',
@@ -12,28 +12,43 @@ document.addEventListener('DOMContentLoaded', function() {
     'assets/Creative/IMG_5509.JPG'
   ];
 
+  // Preload images for faster display
+  const preloadedImages = [];
+  imagePaths.forEach(path => {
+    const img = new Image();
+    img.src = path;
+    preloadedImages.push(img);
+  });
+
+  // Throttle click events to prevent performance issues
+  let lastClickTime = 0;
+  const throttleDelay = 100; // milliseconds
+
   document.addEventListener('click', function(event) {
+    const now = Date.now();
+    if (now - lastClickTime < throttleDelay) return;
+    lastClickTime = now;
+
     // Create new image element
     const img = document.createElement('img');
-    img.src = images[Math.floor(Math.random() * images.length)];
+    img.src = imagePaths[Math.floor(Math.random() * imagePaths.length)];
     img.className = 'click-image';
     
     // Position the image at click location
-    const rect = document.body.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    const x = event.clientX;
+    const y = event.clientY;
     
-    img.style.left = (x - 100) + 'px'; // Center the image on click point
+    img.style.left = (x - 100) + 'px';
     img.style.top = (y - 100) + 'px';
     
     // Add to document
     document.body.appendChild(img);
     
-    // Optional: Remove images after some time to prevent too many accumulating
+    // Remove images after 3 seconds instead of 5
     setTimeout(() => {
       if (img.parentNode) {
         img.parentNode.removeChild(img);
       }
-    }, 5000); // Remove after 5 seconds
+    }, 3000);
   });
 });
