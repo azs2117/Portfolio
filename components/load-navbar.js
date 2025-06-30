@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("components/navbar.html")
+  // Check if we're on index.html
+  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+  const navbarFile = isIndexPage ? "components/navbar-index.html" : "components/navbar.html";
+  
+  fetch(navbarFile)
     .then(response => response.text())
     .then(data => {
       const navbar = document.getElementById("navbar-container");
