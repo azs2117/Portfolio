@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
       'assets/Apps/ARound_mobile.png',
     'assets/Creative/IMG_2151.JPG',
     'assets/Keepsakes/spain-postcard.png',
-      'assets/Creative/thesis_thumbnail.png',
       'assets/Apps/legenda_mobile.png',
     'assets/Keepsakes/napoli-postcard.png',
       'assets/Apps/legenda_tile.png',
